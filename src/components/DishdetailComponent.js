@@ -28,14 +28,16 @@ class DishDetail extends Component {
         }
         const commentsList = comments.map(comment => {
             return (
-                <li key={comment.id}>
-                    <p>{comment.comment}</p>
-                    <p>-- {comment.author}, &nbsp;
-                    {new Intl.DateTimeFormat('en-US', {
-                        month: 'short', day: '2-digit', year: 'numeric'
-                        }).format(new Date(comment.date))}
-                    </p>
-                </li>
+                <div class="container">
+                    <li key={comment.id}>
+                        <p>{comment.comment}</p>
+                        <p>-- {comment.author}, &nbsp;
+                        {new Intl.DateTimeFormat('en-US', {
+                            month: 'short', day: '2-digit', year: 'numeric'
+                            }).format(new Date(Date.parse(comment.date)))}
+                        </p>
+                    </li>
+                </div>
             );
         });
         return (
