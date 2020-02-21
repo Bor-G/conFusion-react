@@ -46,7 +46,7 @@ import { Card, CardImg, CardBody, CardText, CardTitle } from 'reactstrap';
     const DishDetail = (props) => {
         if (props.dish != null)
             return (
-                <div class="container">
+                <div className="container">
                     <div className='row'>
                         <RenderDish dish={props.dish} />
                         <RenderComments comments={props.dish.comments} />
