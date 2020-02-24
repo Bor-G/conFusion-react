@@ -127,10 +127,10 @@ export class CommentForm extends Component {
                                     </Row>
 
                                     <Row className="form-group">
-                                        <Label htmlFor="author" md={12}>Your name</Label>
+                                        <Label htmlFor="author" md={12}>Your Name</Label>
                                         <Col>
                                             <Control.text model=".author" id="author" name="author" 
-                                                placeholder="Author" className="form-control" 
+                                                placeholder="Your Name" className="form-control" 
                                                 validators={{ required, minLength:  minLength(3), maxLength: maxLength(15)}} />
                                             <Errors className="text-danger" model=".author" show="touched" messages=
                                                 {{ 
@@ -143,7 +143,7 @@ export class CommentForm extends Component {
                                     </Row>
 
                                     <Row className="form-group">
-                                        <Label htmlFor="feedback" md={12}>Your feedback</Label>
+                                        <Label htmlFor="feedback" md={12}>Comment</Label>
                                         <Col>
                                             <Control.textarea model=".message" id="message" name="message" rows="6" 
                                                 className="form-control" validators={{ required }} />
