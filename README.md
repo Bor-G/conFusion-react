@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## JSON-server
+Move to json-server folder in your terminal window, and type the following at the command prompt to start the server:
+### `json-server --watch db.json -p 3001 -d 2000`
+
 ## Available Scripts
 
 In the project directory, you can run:
